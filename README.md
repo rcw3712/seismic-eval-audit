@@ -93,3 +93,9 @@ The earlier package remains at the immutable historical commit 872a4ac93eb24cad1
 Software version 0.1.3: https://doi.org/10.5281/zenodo.23684054. Public record: https://zenodo.org/records/23684054. DataCite registration is findable. The Zenodo ZIP checksum and all 76 hashes in its embedded manifest match the immutable release. See case_studies/verification/zenodo_archive_verification.json.
 
 This branch includes manuscript and citation updates made after DOI verification. The DOI identifies the tagged source/evidence snapshot, not later changes to this branch. Current CHECKSUMS.csv verifies the current package; the archive retains its original manifest. Both v0.1.3 and archive-v0.1.3 point to commit 287138537796c577a383844a6faa57f126e17568. No training or inference was performed for archival. The previous model/result DOI 10.5281/zenodo.22824997 is unchanged.
+
+## Software authorship
+
+Rahmat Catur Wibowo developed the Python package seismic-eval-audit. The Software contributions of Razki Alfatah Khairu Mahli and Karyanto in the manuscript relate to the historical MATLAB pipeline, not to this Python package. The single-author CITATION.cff and Zenodo software record therefore describe a different contribution scope from the multi-author manuscript and historical model/result archive. Manuscript authorship is not inferred from Git commit authorship.
+
+The current branch contains minor pre-submission editorial and attribution updates made after the v0.1.3 archive. No implementation, tests, numerical results, checkpoint files or immutable release tags were changed by these edits.
