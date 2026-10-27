@@ -53,6 +53,12 @@ FAIL means the declared exclusion rule is violated under supplied IDs. PASS does
 
 STEAD-derived identifier tables retain CC BY 4.0 attribution; see [DATA_ATTRIBUTION.md](DATA_ATTRIBUTION.md) for original providers, licence links and changes. The MIT license applies to software only. The older DOI identifies the historical model/result archive, not this new package. The v0.1.3 source and evidence are archived at https://doi.org/10.5281/zenodo.23684054.
 
+## Worked user workflow
+
+Start with [docs/WALKTHROUGH.md](docs/WALKTHROUGH.md): native SeisBench CSV columns, source versus station contracts, report interpretation, error exits and separate API examples. `docs/verify_walkthrough.py` exercises the unchanged v0.1.3 wheel from an isolated installation and outside the checkout. The author-run full ETHZ receipt is `case_studies/verification/wheel_usage_receipt.json`; stdout/stderr are in `case_studies/verification/walkthrough_logs/`.
+
+The walkthrough reproduces the existing ETHZ source and station counts; it does not add a dataset, train a model or claim independent-user adoption. The original 27 tests remain unchanged. CI additionally installs the wheel and runs the offline synthetic usage checks in all four OS/Python combinations; it does not download ETHZ. The guide, usage driver, receipts and revised documents postdate the immutable DOI archive and are identified by the current Git commit and manifest. The library and wheel remain byte-identical to the archived v0.1.3 release.
+
 ## Real artifact demonstration
 
 27 automated tests pass. `audit_history` now separates prior train/val, prior-test-only, unknown and other documented roles and counts both sources and records. Role labels are explicit and configurable. `--strict` maps CLI warnings to exit 1 for CI; invalid input remains exit 2.
@@ -98,4 +104,4 @@ This branch includes manuscript and citation updates made after DOI verification
 
 Rahmat Catur Wibowo developed the Python package seismic-eval-audit. The Software contributions of Razki Alfatah Khairu Mahli and Karyanto in the manuscript relate to the historical MATLAB pipeline, not to this Python package. The single-author CITATION.cff and Zenodo software record therefore describe a different contribution scope from the multi-author manuscript and historical model/result archive. Manuscript authorship is not inferred from Git commit authorship.
 
-The current branch contains minor pre-submission editorial and attribution updates made after the v0.1.3 archive. No implementation, tests, numerical results, checkpoint files or immutable release tags were changed by these edits.
+The current branch contains minor pre-submission editorial and attribution updates made after the v0.1.3 archive. No library implementation, original tests, numerical model results, checkpoint files or immutable release tags were changed. Later usage documentation and its verification driver are additions outside the archived release.

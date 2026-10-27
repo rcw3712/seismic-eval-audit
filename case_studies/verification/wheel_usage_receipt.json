@@ -1,0 +1,49 @@
+{
+  "scope": "Author-run installed-wheel usage demonstration",
+  "python": "3.12.14",
+  "os": "Windows",
+  "imported_from_install_target": true,
+  "training": false,
+  "inference": false,
+  "synthetic_cli": {
+    "valid": {
+      "exit": 0,
+      "status": "PASS"
+    },
+    "overlap": {
+      "exit": 1,
+      "status": "FAIL"
+    },
+    "warning": {
+      "exit": 0,
+      "status": "WARNING"
+    },
+    "warning_strict": {
+      "exit": 1,
+      "status": "WARNING"
+    },
+    "invalid": {
+      "exit": 2,
+      "status": "INPUT_ERROR"
+    }
+  },
+  "synthetic_api": {
+    "lineage": "PASS",
+    "oof": "PASS",
+    "schema": "PASS",
+    "history": "WARNING",
+    "artifact": "PASS"
+  },
+  "ethz": {
+    "input_sha256": "542d2e9cfc35847668521fe335bc955b00a42f59f06eaa921ffb92f6009a1dee",
+    "records": 36743,
+    "source_ids": 2231,
+    "source_status": "PASS",
+    "station_status": "FAIL",
+    "station_keys_shared_any_subsets": 190,
+    "station_keys_shared_train_test": 180,
+    "test_records_on_train_station_keys": 9637,
+    "direct_set_crosscheck": "PASS"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,1 @@
+{"status": "WARNING", "scope": "Exact equality of supplied group identifiers only", "group_column": "source_id", "records": 1, "sources": 1, "shared_sources": 0, "affected_records": 0, "pairs": [], "splits": {"train": {"records": 1, "sources": 1}}, "input_sha256": "b5dc18462d3dff7020dbd9c69c1e7f0b82b196d81b8139cbe3cffdd0a68cc7e8"}
