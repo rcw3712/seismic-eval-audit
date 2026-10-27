@@ -51,7 +51,7 @@ The three conditions are the supplied split, an intentionally created random rec
 
 FAIL means the declared exclusion rule is violated under supplied IDs. PASS does not establish physical correctness of IDs, absence of near duplicates, independent development history, or station/region transfer. All history reports remain WARNING: recorded roles do not certify independence. Hash agreement establishes identity with a reference, not correctness of that reference. No fuzzy event grouping is provided. The separate legacy HDF5 reconstruction utility belongs to the retained STEAD case study and is not required by this tool.
 
-STEAD-derived identifier tables retain CC BY 4.0 attribution; see [DATA_ATTRIBUTION.md](DATA_ATTRIBUTION.md) for original providers, licence links and changes. The MIT license applies to software only. The older DOI identifies the historical model/result archive, not this new package. The new version is identified by its Git release tag; no new Zenodo DOI is asserted.
+STEAD-derived identifier tables retain CC BY 4.0 attribution; see [DATA_ATTRIBUTION.md](DATA_ATTRIBUTION.md) for original providers, licence links and changes. The MIT license applies to software only. The older DOI identifies the historical model/result archive, not this new package. The v0.1.3 source and evidence are archived at https://doi.org/10.5281/zenodo.23684054.
 
 ## Real artifact demonstration
 
@@ -86,4 +86,10 @@ The historical artifacts needed by `--stead-root` are separate from this small r
 
 ## Archival status
 
-The earlier package remains at the immutable historical commit 872a4ac93eb24cad10b2473581471dddfd09154d and tag seismic-eval-audit-v0.1.2 in the original repository. This dedicated repository begins with v0.1.3. `.zenodo.json` supplies archive metadata; a new DOI will be cited only after its published record is verified. The older DOI must not be used to identify this Python release. PyPI publication is not claimed; install the provided wheel or source locally.
+The earlier package remains at the immutable historical commit 872a4ac93eb24cad10b2473581471dddfd09154d and tag seismic-eval-audit-v0.1.2 in the original repository. This dedicated repository begins with v0.1.3. `.zenodo.json` supplies archive metadata. The verified version DOI is https://doi.org/10.5281/zenodo.23684054; it identifies tag archive-v0.1.3, which points to the same original v0.1.3 commit (287138537796c577a383844a6faa57f126e17568). The older DOI must not be used to identify this Python release. PyPI publication is not claimed; install the provided wheel or source locally.
+
+## Verified Zenodo archive
+
+Software version 0.1.3: https://doi.org/10.5281/zenodo.23684054. Public record: https://zenodo.org/records/23684054. DataCite registration is findable. The Zenodo ZIP checksum and all 76 hashes in its embedded manifest match the immutable release. See case_studies/verification/zenodo_archive_verification.json.
+
+This branch includes manuscript and citation updates made after DOI verification. The DOI identifies the tagged source/evidence snapshot, not later changes to this branch. Current CHECKSUMS.csv verifies the current package; the archive retains its original manifest. Both v0.1.3 and archive-v0.1.3 point to commit 287138537796c577a383844a6faa57f126e17568. No training or inference was performed for archival. The previous model/result DOI 10.5281/zenodo.22824997 is unchanged.
