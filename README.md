@@ -105,3 +105,11 @@ This branch includes manuscript and citation updates made after DOI verification
 Rahmat Catur Wibowo developed the Python package seismic-eval-audit. The Software contributions of Razki Alfatah Khairu Mahli and Karyanto in the manuscript relate to the historical MATLAB pipeline, not to this Python package. The single-author CITATION.cff and Zenodo software record therefore describe a different contribution scope from the multi-author manuscript and historical model/result archive. Manuscript authorship is not inferred from Git commit authorship.
 
 The current branch contains minor pre-submission editorial and attribution updates made after the v0.1.3 archive. No library implementation, original tests, numerical model results, checkpoint files or immutable release tags were changed. Later usage documentation and its verification driver are additions outside the archived release.
+
+## Four-item editorial closure — 28 October 2026
+
+The manuscript now follows a candidate Software Article structure: Design and Implementation, Availability and Requirements after Conclusions, and Software Files after Tables and captions. This is a prepared candidate, not editorial confirmation of category or permission to resubmit. Online Resource sections and tables are ordered consecutively; source PASS and station FAIL are linked to explicit user decisions. All table contents and scientific results are unchanged.
+
+The post-archive walkthrough and its verification receipt are fixed at commit [502b5415bead677ec810207affed55a0e76a9f82](https://github.com/rcw3712/seismic-eval-audit/tree/502b5415bead677ec810207affed55a0e76a9f82). Its [CHECKSUMS.csv](https://github.com/rcw3712/seismic-eval-audit/blob/502b5415bead677ec810207affed55a0e76a9f82/CHECKSUMS.csv) has SHA-256 `a2701d79c075badc3f9118e67852783182fc9eda577902ad2c6a327ae2f6e79d`. The current commit and current manifest identify the later editorial documents separately. Neither set of additions is attributed to the original v0.1.3 DOI snapshot.
+
+This limited editing cycle is closed pending feedback from the editor or an independent user. No new training, inference, dataset, library, wheel, original-test or model-result changes were made in this pass. The usage verification remains author-run; independent adoption is not claimed.
