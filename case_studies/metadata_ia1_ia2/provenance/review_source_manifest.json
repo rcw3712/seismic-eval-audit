@@ -1,0 +1,42 @@
+[
+  {
+    "local_name": "isc_paper.pdf",
+    "url": "https://gfzpublic.gfz.de/pubman/item/item_5025323_7/component/file_5035055/5025323.pdf",
+    "bytes": 3782245,
+    "sha256": "2b5a1b5c8048ce2d4b7a87a17a8290420ce94dfda0c4e3f895e6efd96f3652e3",
+    "checked_date": "2026-10-28",
+    "redistributed": false
+  },
+  {
+    "local_name": "isc_crossref.json",
+    "url": "https://api.crossref.org/works/10.1785/0220230187",
+    "bytes": 15079,
+    "sha256": "89c05b10b7f23c753f7139a3d666f647b1a6a321bf1796f0ba991a26a900e300",
+    "checked_date": "2026-10-28",
+    "redistributed": false
+  },
+  {
+    "local_name": "iquique_crossref.json",
+    "url": "https://api.crossref.org/works/10.1785/0220180312",
+    "bytes": 13700,
+    "sha256": "69f745f7bff829ed63ebc50dba5150ca506f8e427e0558a3d61609ba709fa726",
+    "checked_date": "2026-10-28",
+    "redistributed": false
+  },
+  {
+    "local_name": "seisbench_imprint.html",
+    "url": "https://seisbench.gfz-potsdam.de/imprint/",
+    "bytes": 4654,
+    "sha256": "7906903bc0a3781723a846818bb2415f8153c19d0f417bbec3832d5596a16eaa",
+    "checked_date": "2026-10-28",
+    "redistributed": false
+  },
+  {
+    "local_name": "picker_paper.pdf",
+    "url": "https://arxiv.org/pdf/2110.13671",
+    "bytes": 3377339,
+    "sha256": "6d47900554e0f822b86b4c5fcdfe22d3e31ea4ee6446004fc70d269195f8fc43",
+    "checked_date": "2026-10-28",
+    "redistributed": false
+  }
+]

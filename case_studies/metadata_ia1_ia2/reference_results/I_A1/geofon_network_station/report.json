@@ -1,0 +1,51 @@
+{
+  "status": "FAIL",
+  "scope": "Exact equality of supplied group identifiers only",
+  "group_column": "group_id",
+  "records": 275274,
+  "sources": 768,
+  "shared_sources": 693,
+  "affected_records": 269972,
+  "pairs": [
+    {
+      "a": "dev",
+      "b": "test",
+      "shared_sources": 657,
+      "a_records": 27256,
+      "b_records": 83291
+    },
+    {
+      "a": "dev",
+      "b": "train",
+      "shared_sources": 635,
+      "a_records": 27044,
+      "b_records": 155809
+    },
+    {
+      "a": "test",
+      "b": "train",
+      "shared_sources": 643,
+      "a_records": 80798,
+      "b_records": 153842
+    }
+  ],
+  "splits": {
+    "dev": {
+      "records": 27685,
+      "sources": 671
+    },
+    "test": {
+      "records": 86261,
+      "sources": 717
+    },
+    "train": {
+      "records": 161328,
+      "sources": 694
+    }
+  },
+  "dataset": "geofon",
+  "contract": "network_station",
+  "group_definition": "JSON tuple of station_network_code and station_code; no location/epoch distinction",
+  "independent_aggregation_check": "PASS",
+  "violations_file": "violations.csv.gz"
+}

@@ -1,0 +1,45 @@
+{
+  "chronological_positive_controls": {
+    "ethz": {
+      "records": 36743,
+      "cutoffs_UTC": [
+        "2019-01-08",
+        "2019-09-04"
+      ],
+      "label_mismatches": 0,
+      "status": "PASS",
+      "interpretation": "Positive control for documented adapter design, not a novel splitting result"
+    },
+    "geofon": {
+      "records": 275274,
+      "cutoffs_UTC": [
+        "2012-11-01",
+        "2013-03-15"
+      ],
+      "label_mismatches": 0,
+      "status": "PASS",
+      "interpretation": "Positive control for documented adapter design, not a novel splitting result"
+    }
+  },
+  "ethz_adapter_local_ids": {
+    "prefix": "sb_id_",
+    "source_ids": 14,
+    "records": 376,
+    "by_split": {
+      "train": {
+        "source_ids": 13,
+        "records": 292
+      },
+      "dev": {
+        "source_ids": 1,
+        "records": 84
+      },
+      "test": {
+        "source_ids": 0,
+        "records": 0
+      }
+    },
+    "interpretation": "The adapter creates a local identifier once per event when the catalog resource suffix is /1. Repeated recordings remain grouped; this field alone does not preserve a resolvable catalog identifier."
+  },
+  "new_training_or_inference": false
+}

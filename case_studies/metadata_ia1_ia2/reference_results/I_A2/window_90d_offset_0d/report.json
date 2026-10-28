@@ -1,0 +1,58 @@
+{
+  "status": "FAIL",
+  "scope": "Exact equality of supplied group identifiers only",
+  "group_column": "group_id",
+  "records": 36743,
+  "sources": 33,
+  "shared_sources": 2,
+  "affected_records": 2862,
+  "pairs": [
+    {
+      "a": "dev",
+      "b": "test",
+      "shared_sources": 1,
+      "a_records": 1111,
+      "b_records": 625
+    },
+    {
+      "a": "dev",
+      "b": "train",
+      "shared_sources": 1,
+      "a_records": 73,
+      "b_records": 1053
+    },
+    {
+      "a": "test",
+      "b": "train",
+      "shared_sources": 0,
+      "a_records": 0,
+      "b_records": 0
+    }
+  ],
+  "splits": {
+    "dev": {
+      "records": 3632,
+      "sources": 4
+    },
+    "test": {
+      "records": 10485,
+      "sources": 6
+    },
+    "train": {
+      "records": 22626,
+      "sources": 25
+    }
+  },
+  "dataset": "ethz",
+  "contract": "window_90d_offset_0d",
+  "group_definition": {
+    "type": "origin_time_UTC",
+    "kind": "fixed",
+    "days": 90,
+    "offset_days": 0,
+    "epoch": "1970-01-01T00:00:00Z",
+    "bins": "half-open"
+  },
+  "independent_aggregation_check": "PASS",
+  "violations_file": "violations.csv.gz"
+}

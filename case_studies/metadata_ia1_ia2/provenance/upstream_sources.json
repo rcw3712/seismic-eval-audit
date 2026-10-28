@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-10-28T07:55:18.270515+00:00",
+  "sources": [
+    {
+      "dataset": "ethz",
+      "source_url": "https://raw.githubusercontent.com/seisbench/seisbench/e5616ad33c00aba75d5130b44222df46b41e4094/seisbench/data/ethz.py",
+      "upstream_commit": "e5616ad33c00aba75d5130b44222df46b41e4094",
+      "sha256": "6e4b247ecbf88de6bda5ce114a41f93ac0af5a46ae7643adfc2c55de34b42973"
+    },
+    {
+      "dataset": "geofon",
+      "source_url": "https://raw.githubusercontent.com/seisbench/seisbench/e5616ad33c00aba75d5130b44222df46b41e4094/seisbench/data/geofon.py",
+      "upstream_commit": "e5616ad33c00aba75d5130b44222df46b41e4094",
+      "sha256": "76aad278d7badf2fd50fdd41b8e12120c1ce9e00e3d4f66c9bd8a3c94247fa45"
+    },
+    {
+      "dataset": "iquique",
+      "source_url": "https://raw.githubusercontent.com/seisbench/seisbench/e5616ad33c00aba75d5130b44222df46b41e4094/seisbench/data/iquique.py",
+      "upstream_commit": "e5616ad33c00aba75d5130b44222df46b41e4094",
+      "sha256": "a61332510e2baf352c7171573af1c738784e43b9ee18ce0b652055c97fba608c"
+    },
+    {
+      "dataset": "isc_ehb",
+      "source_url": "https://raw.githubusercontent.com/seisbench/seisbench/e5616ad33c00aba75d5130b44222df46b41e4094/seisbench/data/isc_ehb.py",
+      "upstream_commit": "e5616ad33c00aba75d5130b44222df46b41e4094",
+      "sha256": "68c62a2dd0bafe464c2d27af29e8beeacc981765047d9ba22f33efade4c28301"
+    }
+  ],
+  "documentation": "https://seisbench.readthedocs.io/en/main/pages/data/benchmark_datasets.html",
+  "note": "Current adapter code provides context, not proof of which historical code generated the distributed CSV."
+}

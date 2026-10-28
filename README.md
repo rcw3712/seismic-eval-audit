@@ -117,3 +117,10 @@ This limited editing cycle is closed pending feedback from the editor or an inde
 ## Final declaration and presentation corrections
 
 The 28 October 2026 correction adds the ethics approval/participation and publication-consent declarations, explains earlier development exposure in the abstract, removes editorial-process wording from public availability statements, and places the three-sentence Table 3 note below the table. Section 4.2 now names both source and station membership outcomes; the installation instruction explicitly starts from the repository root. Table 1–3 first mentions remain ordered. Numerical table contents, library, wheel, original tests, case results and immutable archives are unchanged. Minimum hardware requirements remain unbenchmarked; independent-user adoption is not claimed. Editing is closed pending editor or independent-user feedback.
+
+
+## Cross-dataset metadata evidence (28 October 2026)
+
+The separate [I-A1/I-A2 evidence package](case_studies/metadata_ia1_ia2/README.md) applies the unchanged v0.1.3 wheel to four complete metadata snapshots (515,692 records). It adds 28 verified contracts, positive controls against documented ETHZ/GEOFON chronology, 12 ETHZ spatial configurations and nine temporal definitions. Iquique remains unassessable for source exclusion because its source-ID field is absent. ISC-EHB is interpreted against the primary paper’s event-grouped split. See the package report for limits and snapshot discrepancies.
+
+Raw metadata and record-level tables are excluded from this new public bundle; exact input hashes and official-source acquisition/regeneration scripts are included. This is author-run metadata evidence, not independent adoption or model-performance testing. The software wheel, prior release tags/DOIs, historical model artifacts and completed manuscript are unchanged. The new evidence release is metadata-audit-20261028-r1; its DOI must be verified before citation (see ARCHIVING.md).

@@ -1,0 +1,51 @@
+{
+  "status": "FAIL",
+  "scope": "Exact equality of supplied group identifiers only",
+  "group_column": "group_id",
+  "records": 13400,
+  "sources": 51,
+  "shared_sources": 51,
+  "affected_records": 13400,
+  "pairs": [
+    {
+      "a": "dev",
+      "b": "test",
+      "shared_sources": 51,
+      "a_records": 1340,
+      "b_records": 4020
+    },
+    {
+      "a": "dev",
+      "b": "train",
+      "shared_sources": 51,
+      "a_records": 1340,
+      "b_records": 8040
+    },
+    {
+      "a": "test",
+      "b": "train",
+      "shared_sources": 51,
+      "a_records": 4020,
+      "b_records": 8040
+    }
+  ],
+  "splits": {
+    "dev": {
+      "records": 1340,
+      "sources": 51
+    },
+    "test": {
+      "records": 4020,
+      "sources": 51
+    },
+    "train": {
+      "records": 8040,
+      "sources": 51
+    }
+  },
+  "dataset": "iquique",
+  "contract": "network_station",
+  "group_definition": "JSON tuple of station_network_code and station_code; no location/epoch distinction",
+  "independent_aggregation_check": "PASS",
+  "violations_file": "violations.csv.gz"
+}

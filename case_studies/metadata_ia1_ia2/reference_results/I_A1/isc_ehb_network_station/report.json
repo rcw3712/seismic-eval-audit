@@ -1,0 +1,51 @@
+{
+  "status": "FAIL",
+  "scope": "Exact equality of supplied group identifiers only",
+  "group_column": "group_id",
+  "records": 190275,
+  "sources": 2336,
+  "shared_sources": 1874,
+  "affected_records": 189008,
+  "pairs": [
+    {
+      "a": "dev",
+      "b": "test",
+      "shared_sources": 1054,
+      "a_records": 18965,
+      "b_records": 36514
+    },
+    {
+      "a": "dev",
+      "b": "train",
+      "shared_sources": 1340,
+      "a_records": 19301,
+      "b_records": 129467
+    },
+    {
+      "a": "test",
+      "b": "train",
+      "shared_sources": 1576,
+      "a_records": 37540,
+      "b_records": 131043
+    }
+  ],
+  "splits": {
+    "dev": {
+      "records": 19320,
+      "sources": 1357
+    },
+    "test": {
+      "records": 37566,
+      "sources": 1597
+    },
+    "train": {
+      "records": 133389,
+      "sources": 2304
+    }
+  },
+  "dataset": "isc_ehb",
+  "contract": "network_station",
+  "group_definition": "JSON tuple of station_network_code and station_code; no location/epoch distinction",
+  "independent_aggregation_check": "PASS",
+  "violations_file": "violations.csv.gz"
+}

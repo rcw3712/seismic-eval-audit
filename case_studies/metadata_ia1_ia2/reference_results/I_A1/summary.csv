@@ -1,0 +1,9 @@
+dataset,contract,status,eligible_records,groups,shared_groups_any,affected_records_any,train_records,test_records,train_test_shared_groups,test_groups,test_records_on_train_groups,test_record_fraction,test_source_ids,test_source_ids_on_train_groups,test_source_fraction,input_records,excluded_records,coverage,scope
+ethz,source_id,PASS,36743,2231,0,0,22626,10485,0,524,0,0.0,524,0,0.0,36743,0,1.0,complete table
+ethz,network_station,FAIL,36743,238,190,35439,22626,10485,180,206,9637,0.9191225560324273,524,524,1.0,36743,0,1.0,complete table
+geofon,source_id,PASS,275274,2270,0,0,161328,86261,0,845,0,0.0,845,0,0.0,275274,0,1.0,complete table
+geofon,network_station,FAIL,275274,768,693,269972,161328,86261,643,717,80798,0.9366689465691332,845,845,1.0,275274,0,1.0,complete table
+iquique,source_id,NOT_ASSESSABLE,0,,,,,,,,,,,,,13400,13400,,
+iquique,network_station,FAIL,13400,51,51,13400,8040,4020,51,51,4020,1.0,,,,13400,0,1.0,complete table
+isc_ehb,source_id,PASS,190275,45028,0,0,133389,37566,0,9126,0,0.0,9126,0,0.0,190275,0,1.0,complete table
+isc_ehb,network_station,FAIL,190275,2336,1874,189008,133389,37566,1576,1597,37540,0.9993078847894372,9126,9125,0.9998904229673461,190275,0,1.0,complete table

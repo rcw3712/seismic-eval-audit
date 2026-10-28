@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "restored_file": "iquique.csv",
+  "restored_sha256": "d086c0e1894e559598268f43044d8452cff0a1ab3f204177072110f8918ab260",
+  "other_34_inputs": "verified cached hardlinks",
+  "frozen_input_manifest_unchanged": true,
+  "note": "Tests real download of one missing input and cache verification of the other 34; not a fresh download of all files."
+}

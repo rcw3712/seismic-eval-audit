@@ -1,0 +1,58 @@
+{
+  "status": "FAIL",
+  "scope": "Exact equality of supplied group identifiers only",
+  "group_column": "group_id",
+  "records": 36743,
+  "sources": 56,
+  "shared_sources": 50,
+  "affected_records": 36676,
+  "pairs": [
+    {
+      "a": "dev",
+      "b": "test",
+      "shared_sources": 33,
+      "a_records": 3602,
+      "b_records": 9773
+    },
+    {
+      "a": "dev",
+      "b": "train",
+      "shared_sources": 36,
+      "a_records": 3632,
+      "b_records": 21179
+    },
+    {
+      "a": "test",
+      "b": "train",
+      "shared_sources": 47,
+      "a_records": 10469,
+      "b_records": 22419
+    }
+  ],
+  "splits": {
+    "dev": {
+      "records": 3632,
+      "sources": 36
+    },
+    "test": {
+      "records": 10485,
+      "sources": 48
+    },
+    "train": {
+      "records": 22626,
+      "sources": 55
+    }
+  },
+  "dataset": "ethz",
+  "contract": "grid_50km_offset_0.5_0.5",
+  "group_definition": {
+    "crs": "EPSG:3035",
+    "size_m": 50000,
+    "offset_x_m": 25000.0,
+    "offset_y_m": 25000.0,
+    "index": "floor",
+    "input_order": "longitude,latitude"
+  },
+  "independent_aggregation_check": "PASS",
+  "violations_file": "violations.csv.gz"
+}

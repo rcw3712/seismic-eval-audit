@@ -1,7 +1,7 @@
 {
-  "title": "seismic-eval-audit",
+  "title": "seismic-eval-audit: cross-dataset and ETHZ space-time metadata evidence",
   "upload_type": "software",
-  "description": "Python metadata and provenance audit tool for seismic evaluation. Version 0.1.3 adds targeted documentation and figure revisions and a dedicated repository. No new model training or inference. The software is MIT licensed; STEAD-derived metadata retain CC BY 4.0 attribution and other third-party terms are described in DATA_ATTRIBUTION.md. Historical development exposure remains a limitation.",
+  "description": "Metadata evidence extension using the unchanged seismic-eval-audit 0.1.3 wheel. Four complete SeisBench metadata snapshots comprise 515,692 records; 28 contracts are cross-checked. Includes scripts, exact input hashes, aggregate results and spatial/temporal sensitivity figures. Raw upstream metadata and record-level tables are excluded because uniform redistribution permission was not established. Regeneration requires upstream access to the exact hashed metadata. No model training or inference; author-run verification is not independent adoption. Original software and historical model archives remain unchanged.",
   "creators": [
     {
       "name": "Wibowo, Rahmat Catur",
@@ -9,10 +9,10 @@
       "orcid": "0000-0003-2754-1803"
     }
   ],
-  "version": "0.1.3",
+  "version": "metadata-audit-20261028-r1",
   "license": "mit",
   "access_right": "open",
-  "publication_date": "2026-10-27",
+  "publication_date": "2026-10-28",
   "keywords": [
     "seismology",
     "data leakage",
@@ -28,6 +28,11 @@
     },
     {
       "identifier": "10.5281/zenodo.22824997",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.23684054",
       "relation": "references",
       "scheme": "doi"
     }

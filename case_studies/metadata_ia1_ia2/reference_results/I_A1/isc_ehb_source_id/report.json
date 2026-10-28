@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "scope": "Exact equality of supplied group identifiers only",
+  "group_column": "group_id",
+  "records": 190275,
+  "sources": 45028,
+  "shared_sources": 0,
+  "affected_records": 0,
+  "pairs": [
+    {
+      "a": "dev",
+      "b": "test",
+      "shared_sources": 0,
+      "a_records": 0,
+      "b_records": 0
+    },
+    {
+      "a": "dev",
+      "b": "train",
+      "shared_sources": 0,
+      "a_records": 0,
+      "b_records": 0
+    },
+    {
+      "a": "test",
+      "b": "train",
+      "shared_sources": 0,
+      "a_records": 0,
+      "b_records": 0
+    }
+  ],
+  "splits": {
+    "dev": {
+      "records": 19320,
+      "sources": 4534
+    },
+    "test": {
+      "records": 37566,
+      "sources": 9126
+    },
+    "train": {
+      "records": 133389,
+      "sources": 31368
+    }
+  },
+  "dataset": "isc_ehb",
+  "contract": "source_id",
+  "group_definition": "Exact supplied source_id",
+  "independent_aggregation_check": "PASS",
+  "violations_file": "violations.csv.gz"
+}

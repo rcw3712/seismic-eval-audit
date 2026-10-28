@@ -19,3 +19,8 @@ The source-grouped and record-random controls are explicitly constructed transfo
 ## Software
 
 LICENSE applies to original software under MIT. Third-party data attribution and licence conditions above are retained separately.
+
+
+## I-A1/I-A2 metadata extension
+
+The new case_studies/metadata_ia1_ia2 bundle redistributes no raw ETHZ, GEOFON, Iquique or ISC-EHB metadata and no record-level membership/location tables. The upstream dataset licenses are not inferred from SeisBench’s GPL software license or this project’s MIT license. The 35 per-file decisions, official URLs and hashes are supplied in the bundle. Aggregate findings, original scripts and derived figures are provided with bibliographic and network attribution. See its LICENSE_REVIEW.md.

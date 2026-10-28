@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "scope": "Exact equality of supplied group identifiers only",
+  "group_column": "group_id",
+  "records": 275274,
+  "sources": 2270,
+  "shared_sources": 0,
+  "affected_records": 0,
+  "pairs": [
+    {
+      "a": "dev",
+      "b": "test",
+      "shared_sources": 0,
+      "a_records": 0,
+      "b_records": 0
+    },
+    {
+      "a": "dev",
+      "b": "train",
+      "shared_sources": 0,
+      "a_records": 0,
+      "b_records": 0
+    },
+    {
+      "a": "test",
+      "b": "train",
+      "shared_sources": 0,
+      "a_records": 0,
+      "b_records": 0
+    }
+  ],
+  "splits": {
+    "dev": {
+      "records": 27685,
+      "sources": 261
+    },
+    "test": {
+      "records": 86261,
+      "sources": 845
+    },
+    "train": {
+      "records": 161328,
+      "sources": 1164
+    }
+  },
+  "dataset": "geofon",
+  "contract": "source_id",
+  "group_definition": "Exact supplied source_id",
+  "independent_aggregation_check": "PASS",
+  "violations_file": "violations.csv.gz"
+}

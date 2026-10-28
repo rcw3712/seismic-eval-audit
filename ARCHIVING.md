@@ -13,3 +13,8 @@ The ZIP was downloaded from Zenodo; its advertised MD5 and the SHA-256 hashes of
 The DOI identifies the immutable source/evidence release. Manuscript and citation edits after verification are kept on the current branch and have an updated CHECKSUMS.csv; they do not modify the Zenodo archive. Do not upload a duplicate copy merely to update citations. Future substantive software versions should use a new versioned release and their own verified archive metadata.
 
 The historical model/result DOI 10.5281/zenodo.22824997 remains separate and unchanged. The software MIT licence and data attribution in DATA_ATTRIBUTION.md retain their distinct scopes.
+
+
+## Metadata evidence extension
+
+The release metadata-audit-20261028-r1 adds the I-A1/I-A2 evidence bundle; the executable wheel stays at v0.1.3 and matches the earlier archive hash. This is a new evidence snapshot, not an update to old DOI bytes. Raw metadata are excluded. Archival verification is pending; do not assign the previous software DOI to the new evidence.
