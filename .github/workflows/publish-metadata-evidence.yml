@@ -1,0 +1,66 @@
+name: Publish verified metadata evidence
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/publish-metadata-evidence.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: publish-metadata-audit-20261028-r1
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == 'rcw3712/seismic-eval-audit'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      EVIDENCE_TAG: metadata-audit-20261028-r1
+      EVIDENCE_COMMIT: 6d7ecbbb7758e1dcfcf4cfe7f0eeb0a875bfe520
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 6d7ecbbb7758e1dcfcf4cfe7f0eeb0a875bfe520
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify fixed tag and frozen package
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse "refs/tags/$EVIDENCE_TAG^{commit}")" = "$EVIDENCE_COMMIT"
+          test "$(git rev-parse HEAD)" = "$EVIDENCE_COMMIT"
+          python verify_package.py
+          python case_studies/metadata_ia1_ia2/check_package.py
+          python -m unittest discover -s tests
+      - name: Prepare fixed-snapshot assets and notes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git archive --format=zip --prefix=seismic-eval-audit-metadata-audit-20261028-r1/ --output="$RUNNER_TEMP/metadata-audit-20261028-r1.zip" "$EVIDENCE_COMMIT"
+          cp CHECKSUMS.csv "$RUNNER_TEMP/CHECKSUMS.csv"
+          cp dist/seismic_eval_audit-0.1.3-py3-none-any.whl "$RUNNER_TEMP/seismic_eval_audit-0.1.3-py3-none-any.whl"
+          cat > "$RUNNER_TEMP/release-notes.md" <<'EOF'
+          Metadata evidence extension using the unchanged seismic-eval-audit v0.1.3 wheel.
+
+          Four complete SeisBench snapshots comprise 515,692 records; 28 contracts were cross-checked with a separate implementation. The evidence distinguishes chronological positive controls, unassessable Iquique source membership, adapter-local ETHZ IDs, and the documented event-grouped ISC-EHB split. Twelve ETHZ spatial configurations and nine temporal definitions are reported.
+
+          Raw upstream metadata and record-level tables are excluded from the new public evidence bundle. Exact hashes and official-source acquisition/regeneration scripts are supplied. Regeneration requires availability of those exact upstream bytes. No training or inference was performed; author-run verification is not independent-user adoption.
+
+          Fixed commit: 6d7ecbbb7758e1dcfcf4cfe7f0eeb0a875bfe520. The original software and model releases/DOIs remain unchanged. The release workflow checks the fixed tag, all manifest entries, the evidence-package manifest and the original 27 tests before publishing. The new Zenodo DOI must be independently verified before being cited; the previous DOI does not identify this extension.
+          EOF
+      - name: Publish release once
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          if gh release view "$EVIDENCE_TAG" --json url,isDraft,isPrerelease > "$RUNNER_TEMP/existing-release.json"; then
+            python -c 'import json,os; d=json.load(open(os.path.join(os.environ["RUNNER_TEMP"],"existing-release.json"))); assert not d["isDraft"] and not d["isPrerelease"]; print("Already published:",d["url"])'
+          else
+            gh release create "$EVIDENCE_TAG" --verify-tag --target "$EVIDENCE_COMMIT" --latest=false --title "Metadata audit evidence: cross-dataset and ETHZ space-time checks" --notes-file "$RUNNER_TEMP/release-notes.md" "$RUNNER_TEMP/metadata-audit-20261028-r1.zip" "$RUNNER_TEMP/CHECKSUMS.csv" "$RUNNER_TEMP/seismic_eval_audit-0.1.3-py3-none-any.whl"
+          fi
