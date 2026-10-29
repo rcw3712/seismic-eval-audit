@@ -51,6 +51,8 @@ jobs:
           Raw upstream metadata and record-level tables are excluded from the new public evidence bundle. Exact hashes and official-source acquisition/regeneration scripts are supplied. Regeneration requires availability of those exact upstream bytes. No training or inference was performed; author-run verification is not independent-user adoption.
 
           Fixed commit: 6d7ecbbb7758e1dcfcf4cfe7f0eeb0a875bfe520. The original software and model releases/DOIs remain unchanged. The release workflow checks the fixed tag, all manifest entries, the evidence-package manifest and the original 27 tests before publishing. The new Zenodo DOI must be independently verified before being cited; the previous DOI does not identify this extension.
+
+          Verified Zenodo version DOI: https://doi.org/10.5281/zenodo.23758930 (29 October 2026). The downloaded archive matches its advertised MD5, all 165 manifest hashes, and the complete frozen-commit file set. DataCite state is findable and the DOI resolves to the public record. The unchanged v0.1.3 wheel hash also matches. Current-branch verification receipt: case_studies/verification/zenodo_metadata_archive_verification.json.
           EOF
       - name: Publish release once
         shell: bash
@@ -60,7 +62,9 @@ jobs:
         run: |
           set -euo pipefail
           if gh release view "$EVIDENCE_TAG" --json url,isDraft,isPrerelease > "$RUNNER_TEMP/existing-release.json"; then
+            python -c 'import json,urllib.request; d=json.load(urllib.request.urlopen("https://zenodo.org/api/records/23758930")); assert d["doi"]=="10.5281/zenodo.23758930" and d["metadata"]["version"]=="metadata-audit-20261028-r1"'
             python -c 'import json,os; d=json.load(open(os.path.join(os.environ["RUNNER_TEMP"],"existing-release.json"))); assert not d["isDraft"] and not d["isPrerelease"]; print("Already published:",d["url"])'
+            gh release edit "$EVIDENCE_TAG" --notes-file "$RUNNER_TEMP/release-notes.md"
           else
             gh release create "$EVIDENCE_TAG" --verify-tag --target "$EVIDENCE_COMMIT" --latest=false --title "Metadata audit evidence: cross-dataset and ETHZ space-time checks" --notes-file "$RUNNER_TEMP/release-notes.md" "$RUNNER_TEMP/metadata-audit-20261028-r1.zip" "$RUNNER_TEMP/CHECKSUMS.csv" "$RUNNER_TEMP/seismic_eval_audit-0.1.3-py3-none-any.whl"
           fi

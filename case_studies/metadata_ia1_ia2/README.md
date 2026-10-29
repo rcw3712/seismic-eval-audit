@@ -1,5 +1,7 @@
 # Cross-dataset and ETHZ space–time metadata audits
 
+Verified version DOI: **https://doi.org/10.5281/zenodo.23758930** (archival checked 29 October 2026).
+
 Evidence release **metadata-audit-20261028-r1**, using the unchanged **seismic-eval-audit 0.1.3** wheel. The runtime has not been retrained, modified or renumbered. This extension adds metadata evidence; no model training or inference was performed. See [AUDIT_REPORT.md](AUDIT_REPORT.md), [REVIEW_RESPONSE.md](REVIEW_RESPONSE.md), and [ARCHIVE_STATUS.md](ARCHIVE_STATUS.md).
 
 ## Findings and boundaries
