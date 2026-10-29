@@ -1,0 +1,115 @@
+{
+  "checked": "2026-10-29",
+  "archive_membership_tables": [
+    {
+      "doi": "10.5281/zenodo.23684054",
+      "path": "case_studies/ethz_source/ethz_grouped/membership.csv",
+      "rows": 36743,
+      "columns": [
+        "record_id",
+        "source_id",
+        "split"
+      ],
+      "sha256": "933639d993a36a55c297eb914c03472e6a2617fbef17d0183803b6059963b784"
+    },
+    {
+      "doi": "10.5281/zenodo.23684054",
+      "path": "case_studies/ethz_source/ethz_provided/membership.csv",
+      "rows": 36743,
+      "columns": [
+        "record_id",
+        "source_id",
+        "split"
+      ],
+      "sha256": "9aed6014fda1ba8047f7a5e5c962a295ab5ec04f60ccc048e0fe3ae3b58f2496"
+    },
+    {
+      "doi": "10.5281/zenodo.23684054",
+      "path": "case_studies/ethz_source/ethz_record_random/membership.csv",
+      "rows": 36743,
+      "columns": [
+        "record_id",
+        "source_id",
+        "split"
+      ],
+      "sha256": "a1b5b6192f22672c028c825005796d15c88e03aec92aebe03744688e93a52a5d"
+    },
+    {
+      "doi": "10.5281/zenodo.23684054",
+      "path": "case_studies/results/ethz_station/membership.csv",
+      "rows": 36743,
+      "columns": [
+        "record_id",
+        "station_key",
+        "split"
+      ],
+      "sha256": "3b6111b516f57e30503d187d7379b06bccab85b1071ef4c441ba924ececbbaff"
+    },
+    {
+      "doi": "10.5281/zenodo.23758930",
+      "path": "case_studies/ethz_source/ethz_grouped/membership.csv",
+      "rows": 36743,
+      "columns": [
+        "record_id",
+        "source_id",
+        "split"
+      ],
+      "sha256": "933639d993a36a55c297eb914c03472e6a2617fbef17d0183803b6059963b784"
+    },
+    {
+      "doi": "10.5281/zenodo.23758930",
+      "path": "case_studies/ethz_source/ethz_provided/membership.csv",
+      "rows": 36743,
+      "columns": [
+        "record_id",
+        "source_id",
+        "split"
+      ],
+      "sha256": "9aed6014fda1ba8047f7a5e5c962a295ab5ec04f60ccc048e0fe3ae3b58f2496"
+    },
+    {
+      "doi": "10.5281/zenodo.23758930",
+      "path": "case_studies/ethz_source/ethz_record_random/membership.csv",
+      "rows": 36743,
+      "columns": [
+        "record_id",
+        "source_id",
+        "split"
+      ],
+      "sha256": "a1b5b6192f22672c028c825005796d15c88e03aec92aebe03744688e93a52a5d"
+    },
+    {
+      "doi": "10.5281/zenodo.23758930",
+      "path": "case_studies/results/ethz_station/membership.csv",
+      "rows": 36743,
+      "columns": [
+        "record_id",
+        "station_key",
+        "split"
+      ],
+      "sha256": "3b6111b516f57e30503d187d7379b06bccab85b1071ef4c441ba924ececbbaff"
+    }
+  ],
+  "stead": {
+    "rows": 2234,
+    "input_sha256": "84547c3655277053b9473d9690eb0baa4c730033aa218449567eb589a20a532f",
+    "distance_km_min": 0.0,
+    "distance_km_max": 49.99,
+    "distance_gt15": 1750,
+    "magnitude_min": 2.5,
+    "magnitude_max": 5.9,
+    "p_manual": 1986,
+    "s_manual": 1845,
+    "both_manual": 1817,
+    "snr_component_count": {
+      "3": 2234
+    },
+    "snr_min": -1.70000005,
+    "snr_max": 109.40000153,
+    "records_all_snr_ge10": 2172
+  },
+  "license_status": "NOT_ESTABLISHED; not a prohibition determination",
+  "isc_primary_pdf_sha256": "2b5a1b5c8048ce2d4b7a87a17a8290420ce94dfda0c4e3f895e6efd96f3652e3",
+  "isc_primary_location": "Section 2.1; printed p.5 / PDF p.7; lines 94-98",
+  "no_training_or_inference": true
+}
