@@ -1,0 +1,7 @@
+{
+  "source": "JoS ESM_3.zip/revision/selection_prefix_comparison.csv",
+  "sha256": "601d43dbc3a83098568f4ac2163fe98d7623e96d355c6d88fdb33c4bce41a67e",
+  "rows": 2234,
+  "ordered_pairs_equal": 2234,
+  "scope": "Check of saved comparison table only; no HDF5 rescan or inference"
+}

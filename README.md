@@ -102,7 +102,7 @@ This branch includes manuscript and citation updates made after DOI verification
 
 ## Software authorship
 
-Rahmat Catur Wibowo developed the Python package seismic-eval-audit. The Software contributions of Razki Alfatah Khairu Mahli and Karyanto in the manuscript relate to the historical MATLAB pipeline, not to this Python package. The single-author CITATION.cff and Zenodo software record therefore describe a different contribution scope from the multi-author manuscript and historical model/result archive. Manuscript authorship is not inferred from Git commit authorship.
+Rahmat Catur Wibowo developed the Python package seismic-eval-audit. The current ESI manuscript authors are Rahmat Catur Wibowo, Razki Alfatah Khairu Mahli, and Muh Sarkowi. Mahli’s Software contribution concerns the historical MATLAB pipeline, which also includes contributions by Karyanto documented in the historical sources. The single-author root CITATION.cff and Zenodo software record describe Python development; manuscript/CITATION.bib describes the current manuscript. Manuscript authorship is not inferred from Git commit authorship.
 
 The current branch contains minor pre-submission editorial and attribution updates made after the v0.1.3 archive. No library implementation, original tests, numerical model results, checkpoint files or immutable release tags were changed. Later usage documentation and its verification driver are additions outside the archived release.
 
@@ -130,3 +130,7 @@ Raw metadata and record-level tables are excluded from this new public bundle; e
 The manuscript and Online Resource now distinguish the new metadata extension from the complete repository archives. Both DOI snapshots retain the four legacy ETHZ identifier-only membership tables; only the extension excludes its new row-level outputs. No named ETHZ redistribution license was established in the inspected sources, and the existing tables are not relicensed as MIT. See [DATA_ATTRIBUTION.md](DATA_ATTRIBUTION.md), the extension [LICENSE_REVIEW.md](case_studies/metadata_ia1_ia2/LICENSE_REVIEW.md), and [verification notes](docs/MANUSCRIPT_SCOPE_VERIFICATION_20261029.md).
 
 The manuscript additionally states the Iquique source-ID limitation, defines exclusion contracts, adds Yang et al. (2022), and distinguishes historical configured STEAD filters from the recovered collection. No new training, inference or software-version change accompanies these edits.
+
+## Current manuscript revision 18 November 2026
+
+The [current manuscript](manuscript/PathA_MainText.docx), [Online Resource](manuscript/PathA_OnlineResource1.docx), [author information](manuscript/PathA_Author_Information.docx) and [related-work disclosure](manuscript/PathA_Overlap_Disclosure.docx) use the three-author list above. They disclose the related JoS manuscript under review and the empirical reconstruction of the retained STEAD prefix. See [scope and authorship notes](docs/AUTHORSHIP_UPDATE_20261118.md). Manuscript Zenodo metadata is prepared only; no new deposit or DOI is claimed. Historical revision records and frozen software/evidence archives remain identifiable by their original versions.

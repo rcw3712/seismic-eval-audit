@@ -1,0 +1,25 @@
+{
+  "title": "Auditing Earthquake Source Separation and Data History in Seismic Machine Learning",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "creators": [
+    {
+      "name": "Wibowo, Rahmat Catur",
+      "affiliation": "Universitas Lampung",
+      "orcid": "0000-0003-2754-1803"
+    },
+    {
+      "name": "Mahli, Razki Alfatah Khairu",
+      "affiliation": "Universitas Lampung",
+      "orcid": "0009-0008-9676-7842"
+    },
+    {
+      "name": "Sarkowi, Muh",
+      "affiliation": "Universitas Lampung",
+      "orcid": "0000-0001-8554-3407"
+    }
+  ],
+  "description": "Software Article manuscript for Earth Science Informatics; no acceptance or publication is claimed. Python audit methodology with historical STEAD evidence and four-dataset metadata audits.",
+  "version": "manuscript-20261118",
+  "notes": "Prepared metadata only. No Zenodo record has been created or updated by this file."
+}
